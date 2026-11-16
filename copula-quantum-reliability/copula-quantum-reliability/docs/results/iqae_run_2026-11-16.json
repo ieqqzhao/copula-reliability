@@ -1,0 +1,59 @@
+{
+  "backend": "classical StatevectorSampler simulation",
+  "epsilon_target": 0.02,
+  "confidence": 0.95,
+  "seed": 17,
+  "iqae_shots_per_round": 256,
+  "circuit_build_seconds": 0.0003290000604465604,
+  "methods": {
+    "analytic": {
+      "estimate": 0.16347562610761085,
+      "seconds": 0.00006360001862049103,
+      "abs_error": 0
+    },
+    "statevector": {
+      "estimate": 0.1634756261076109,
+      "seconds": 0.0026811999268829823,
+      "abs_error": 5.551115123125783e-17
+    },
+    "classical_mc": {
+      "estimate": 0.1595836947094536,
+      "seconds": 0.0020016999915242195,
+      "ci": [
+        0.14912402590972754,
+        0.17047627487111638
+      ],
+      "samples": 4612,
+      "abs_error": 0.0038919313981572445
+    },
+    "ordinary_quantum_sampling": {
+      "estimate": 0.1530789245446661,
+      "seconds": 0.023572899983264506,
+      "ci": [
+        0.14280098691485735,
+        0.16379814581354343
+      ],
+      "shots": 4612,
+      "q_queries": 0,
+      "a_and_adjoint_queries": 4612,
+      "abs_error": 0.010396701562944755
+    },
+    "iqae": {
+      "estimate": 0.16293284594793073,
+      "ci": [
+        0.1599734352636313,
+        0.16589225663223012
+      ],
+      "shots": 768,
+      "q_queries": 2816,
+      "a_and_adjoint_queries": 6400,
+      "powers": [
+        0,
+        1,
+        10
+      ],
+      "seconds": 0.05556010000873357,
+      "abs_error": 0.0005427801596801229
+    }
+  }
+}
